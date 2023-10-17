@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid Quartet</title>
+  <link rel="icon" href="https://fav.farm/↔️">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- similar to the 3 grails, but i just used the breakpoints already in bs -->
+<!-- when viewport width is xs (<576px) show only the main -->
+<!-- when viewport width is sm [576px,767px] show everything in col -->
+<!-- when viewport width is md [768px,991px] nav is still full width but the other stuff is in 2 columns -->
+<!-- when viewport width is lg (>991px) 3 cols -->
+
+<body>
+  <header class="main-head container-fluid d-none d-sm-block">The header</header>
+  <main class="row">
+    <nav class="main-nav col-lg d-none d-sm-block">
+      <h2>Nav</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="">Nav 1</a></li>
+        <li class="nav-item"><a href="">Nav 2</a></li>
+        <li class="nav-item"><a href="">Nav 3</a></li>
+      </ul>
+    </nav>
+    <article class="content col-md-8 order-md-2">
+      <h1>Main article area</h1>
+      <p>
+        In this layout, we display the areas in source order for any screen less
+        that 500 pixels wide. We go to a two column layout, and then to a three
+        column layout by redefining the grid, and the placement of items on the
+        grid.
+      </p>
+    </article>
+    <div class="col-md order-md-1 order-lg-3 d-none d-sm-block">
+      <aside class="side">
+        <h2>Sidebar</h2>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum necessitatibus aperiam cumque fugiat doloremque dignissimos. Ad quas ut veniam minima praesentium, a at aut. Voluptate nostrum nam sequi nemo consequuntur.
+      </aside>
+      <div class="ad">
+        <h2>Advertising</h2>
+        <img class="img-fluid" src="https://picsum.photos/id/343/100/100" alt="rnadom image placeholder">
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer d-none d-sm-block">The footer</footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
